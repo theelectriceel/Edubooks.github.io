@@ -1,0 +1,329 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Fjalla One', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;}
+header {
+	background-image: url("124383.jpg");
+	color: #9a6767;
+	background-size: contain;
+	
+
+}
+
+p{
+	font-family: 'Montserrat', sans-serif;
+}
+
+form {
+  background-color: gainsboro;
+  margin-top: 0;
+  margin: 40px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	padding-top: 20px
+	
+}
+
+label{
+ margin: auto;
+ 
+}
+input, select, textarea {
+	margin: auto;
+	padding:20px;
+	border-radius: 10px;
+	border: 1px solid ;
+	margin-bottom: 20px;
+	outline-color: gray;
+	font-size: larger;
+	width: 80%;
+
+}
+
+button[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+    font-size: 20px;
+	width: 80%;
+	margin: auto;
+	margin-bottom: 40px;
+	
+}
+
+button[type="submit"]:hover {
+	background-color: gray;
+    transition:400ms;
+}
+option{
+	font-size: 18px;
+}
+input[type="file"]
+{
+    display: none;
+}
+label[for="bookImage"]
+{
+	
+	font-size: 100;
+
+	width:fit-content;
+	border-radius: 6px;
+	
+	margin: auto;
+}
+header{position: sticky;
+top: 0;
+z-index: 99;}
+nav{
+	
+ text-align: center;
+}
+ul{
+	list-style: none;
+}
+nav li{
+	display:inline-block;
+	padding: 7px 12px;
+	
+}
+nav a{
+	color: white;
+	text-decoration: none;
+	position:relative;
+font-size: 20px;	
+	
+}
+select
+{
+	margin: auto;
+	font-size: 18px;
+    width: 60%;
+}
+nav a:active
+{
+	background-color: gray;
+}
+
+nav a::after{
+	content: '';
+	position: absolute;
+	transform: scaleX(0);
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	transform-origin: center;
+	transition: 250ms ease-in;
+	background-color: grey;
+
+}
+nav a:hover::after{
+	transform: scaleX(1);
+	transition: 250ms ease-out;
+
+}
+img{
+	margin:0;
+}
+.start{
+	padding: 0px;
+	width: 100%;
+	height: 400px;
+	background-color: black;
+	background-image: url("124383.jpg");
+	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 0.9;
+	
+	
+}
+h3{
+	margin: 0;
+	color:  rgb(255, 255, 255);
+	text-align: center;
+	transform: translate(0,250%);
+	font-size: 50PX;
+	font-family: 'Roboto Condensed', sans-serif;
+	animation-name: flash;
+	animation-duration: 2s;
+	
+	
+	
+}
+@keyframes flash{
+	0%{color: purple; opacity: 0%;}
+	25%{color: plum}
+	50%{color: navy;}
+	75%{color: gray}
+	100%{ color:white;opacity: 100%;}
+}
+div img
+{
+	margin: 20px;
+	width: 400px;
+	border-radius: 20px;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 4
+
+}
+table{margin: auto;
+	width: 80;
+}
+.formsen{
+	font-family: 'Fjalla One', sans-serif;
+	text-align: center;
+	color: rgb(232, 225, 225);
+	margin: 20px;
+	margin-top: 0px;
+}
+.body1
+{
+ text-align: center;
+ margin: 5px;
+ line-height: 25px;
+}
+div p{
+	text-align: center;
+}
+h2{
+	text-align: center; padding-top:20px;padding-bottom:15px;font-size: 35px;
+}
+h4{
+	padding: 14px 0;
+	font-size: 20px;
+}
+table p{
+	margin: auto;
+}
+.mid
+{
+	border-radius:20000px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: rgba(236, 141, 141, 0.7);
+
+
+}
+:root{ scroll-behavior: smooth;
+}
+.a{
+	margin: 20px 0;
+	margin-bottom: 50px;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+table {
+	text-align: center;
+	
+}
+
+.bronze
+{
+	background-color:rgba(137, 39, 39,0.7) ;
+	border-radius: 10px;
+	color: white;
+	margin: 10px;
+	padding: 10px;
+	box-shadow: 2px 2px 4px rgb(125, 110, 110);
+}
+.silver
+{
+	background-color: rgb(125, 110, 110); ;
+	border-radius: 10px;
+	color: white;
+	margin: 10px;
+	padding: 10px;
+	box-shadow: 2px 2px 4px rgb(125, 110, 110);
+	
+}.gold
+{
+	background-color: rgb(191, 175, 74) ;
+	border-radius: 10px;
+	color: white;
+	margin: 10px;
+	padding: 10px;
+	box-shadow: 2px 2px 4px rgb(125, 110, 110);
+
+}
+
+.bronze:hover
+{
+	transform: scale(125%,125%);
+	transition: 0.2s;
+}
+.silver:hover
+{
+	transform: scale(125%,125%);
+	transition: 0.2s;
+
+}
+.gold:hover
+{
+	transform: scale(125%,125%);
+	transition: 0.2s;
+}
+
+.close{
+	padding: 0px;
+	width: 100%;
+	height: 400px;
+	background-color: rgb(255, 255, 255);
+	
+	opacity: 0.9;
+	
+}
+.book{
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+}
+td{width: 20%;}
+.formm
+{
+	margin: 0;
+	background-image: url("124383.jpg");
+  padding-bottom: 10px;
+}
+.home
+{
+	background-image: url();
+}
+
+.step
+{
+	width: 30%;
+}
+.icon
+{
+	width: 30%;
+}
+.ICONS
+{
+	width: 33%;
+}
+.icon:hover
+{
+	transform: scale(120%);
+	transition: 250ms;
+}
